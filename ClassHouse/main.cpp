@@ -1,5 +1,7 @@
 ﻿#include <Windows.h>
 #include "Human.h"
+#include"Flat.h"
+#include"House.h"
 #include <iostream>
 
 using namespace std;
@@ -11,12 +13,9 @@ int main()
 	setlocale(LC_ALL, "RU");
 	Date birthday(18, 7, 1989);
 	Human x("Ромашов", "Виктор", "Викторович", birthday);
-	Human y{ x };
-
-	y.setName("Дмитрий");
-	cout << "Кол-во объектов: " << Human::getCountInstance() << endl;
+	House z;
+	z.showHouse();
 	x.showHuman();
-	y.showHuman();
 
 
 
